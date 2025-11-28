@@ -2,13 +2,9 @@
 {
     public static void Main(string[] args)
     {
-        string? name;
+        string? name = "Guest";
         Console.WriteLine("What is your name? ");
-        string? readResult = Console.ReadLine();
-        if (readResult == null)
-        {
-            name = "Guest";
-        }
+        name = Console.ReadLine();
         Console.WriteLine($"Hi, {name}!");
     }
 }
